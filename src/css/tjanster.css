@@ -1,0 +1,5 @@
+.tjanster{
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 1rem;
+}

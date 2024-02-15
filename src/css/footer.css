@@ -1,0 +1,12 @@
+.footerGrid{
+    display: flex;
+flex-direction: column;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: black;
+}
+

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat:wght@100;200;300;400&family=Sedgwick+Ave+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F5F5;
+}
+
+/* Base font styles and background */
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F5F5;
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Root variables for easy theme management */
+:root {
+  --primary-color: #2E5955;
+  --secondary-color: #ED7464;
+  --text1-color: #2E5957;
+  --third-color: #F5F5F5;
+  --section-color: #2E5955;
+  --font-family-title: 'Montserrat', sans-serif;
+  --font-family-p: 'sans-serif', sans-serif;
+
+}
+/* Heading and paragraph font styling */
+h1, h2, h3, h4, h5, h6, label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, a, li, span, label, input, textarea, select, button, div{
+  font-family: 'sans-serif', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+h4{
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 820px) {
+  h1 {
+      font-size: 5rem;
+    }
+  h2 {
+      font-size: 1.5rem;
+    }
+  h3 {
+      font-size: 1.35rem;
+    }
+  h4 {
+      font-size: 1.25rem;
+    }
+  p{
+      font-size:1.125rem;
+      }
+    }
+    
+    /* For standard desktop screens */
+    @media only screen and (min-width: 1025px) {
+      .h1 {
+        font-size: 7rem;
+      }
+      .h2 {
+        font-size: 1.75rem;
+      }
+      .h3 {
+        font-size: 1.5rem;
+      }
+      .h4 {
+        font-size: 1.4rem;
+      }
+      .p {
+        font-size: 1.25rem; /* even larger for desktop screens */
+        line-height: 1.5; /* Slightly larger line-height for better readability */
+      }
+    }

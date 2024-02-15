@@ -1,0 +1,227 @@
+/* Base styles */
+  
+.hamburger {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: none; /* Hide the hamburger initially */
+  }
+  
+/* Rotation class for the SVG */
+.hamburger svg.rotate {
+	transform: rotate(90deg);
+	transition: transform 0.3s ease; /* Smooth rotation transition */
+  }
+
+  .hamburger svg {
+width: 30%;
+  }
+  .nav ul {
+	display:flex;
+	  flex-direction: row; /* Stack menu items vertically on mobile */
+	  justify-content: center;
+	  align-items: center;
+	  list-style: none;
+	  margin: 0;
+	  padding: 10px 0 0 0;
+	}
+
+  nav li{
+	  font-size: 1rem;
+	  padding: 0.5rem 0; /* Adjust padding for list items on mobile */
+  }
+
+/* Styles for mobile and tablet */
+@media (max-width: 768px) {
+	.hamburger {
+	  display: flex; /* Show the hamburger */
+	  padding-right: 15px;
+
+	}  
+	.hamburger svg {
+		width: 20%;
+		  }
+	.nav {
+	  visibility: hidden; /* Initially hidden */
+	  opacity: 0; /* Fully transparent */
+	  position: fixed; /* Use fixed to position relative to the viewport */
+	  top: 100px; /* Positioned at the top */
+	  left: 235px; /* Start from the left edge */
+	  right: 0; /* Stretch to the right edge, or remove if using a specific width */
+	  background: rgba(46, 89, 85, 0.8); /* Translucent background */
+	  z-index: 1000;
+	  flex-direction: column;
+	  padding-bottom: 20px;
+	  transition: opacity 0.3s linear, visibility 0s linear 0.3s; /* Adjusted transition */
+	  width: 40%; /* Take full width of the screen, adjust as needed */
+	/* Take full height of the viewport */
+	  overflow-y: auto; /* Allows scrolling if content is longer than the screen */
+	  border-radius: 0.3rem;
+	  text-align: center;
+	}
+  
+	.nav.open {
+	visibility: visible; /* Shown */
+	  opacity: 1; /* Fully visible */
+	  transition: opacity 0.3s linear; /* Transition for a fade effect */
+	}
+  
+	.nav ul {
+	display:flex;
+	  flex-direction: column; /* Stack menu items vertically on mobile */
+	  justify-content: center;
+	  align-items: center;
+	  list-style: none;
+	  margin: 0;
+	  padding: 10px 0 0 0;
+	}
+  
+	.nav a {
+	  text-decoration: none;
+	  color: #FEF6EB; /* Color of the links */
+	  text-align: center;
+	}
+	.nav a:hover,
+	.nav a.active {
+	  color: #FEF6EB; /* Color for active link */
+	}
+	
+  }
+
+/* Styles for smaller tablets */
+@media (min-width: 768px) and (max-width: 819px) {
+	.hamburger {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 100px;
+	
+	  }
+	.hamburger svg {
+		width: 22%;
+		  }
+	.nav {
+	  top: 125px; /* Positioned at the top */
+	  left: 460px; /* Start from the left edge */
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  transition: opacity 0.3s linear, visibility 0s linear 0.3s; /* Adjusted transition */
+	  width: 40%; /* Take full width of the screen, adjust as needed */
+	/* Take full height of the viewport */
+	  overflow-y: auto; /* Allows scrolling if content is longer than the screen */
+	}
+  
+	.nav li {
+	  padding: 0.7rem 0; /* Adjust padding for list items on mobile */
+	}
+
+	.nav li {
+		font-size: 1.2rem; /* Tablet font size */
+	  }
+  
+	.nav a {
+	  text-decoration: none;
+	  color: #FEF6EB; /* Color of the links */
+	}
+	.nav a:hover,
+	.nav a.active {
+	  color: #4C5270; /* Color for active link */
+	}
+	
+  }
+  
+  
+  /* Styles for desktop */
+  @media (min-width: 820px) {
+	  
+	.hamburger {
+		display: none; /* Hide the hamburger initially */
+	  }
+	  .nav {
+		display: flex;
+		justify-content: center; /* Center items horizontally */
+		align-items: center; /* Center items vertically */
+	  }
+	.nav ul {
+	  display: flex;
+	  justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+	  width: 100%;
+	  padding: 1rem;
+	}
+  
+	.nav li {
+	
+	  padding: 0 10px; /* Spacing between menu items */
+	  font-size: 1.2rem; /* Tablet font size */
+	}
+  
+	.nav a {
+	  text-decoration: none;
+	  color: #4C5270; /* Text color of the links */
+	}
+  
+	.nav a:hover,
+	.nav a:active {
+	  text-decoration: none;
+	  color: #FF758F; /* Hover and active link color */
+	}
+  }
+
+/* Styles for large desktops */
+@media (min-width: 1024px) {
+	.nav {
+	  display: flex;
+	  justify-content: flex-end; /* Align the nav container items to the end (right) */
+	  width: 100%; /* Ensure nav takes full width */
+	}
+  
+	.nav ul {
+	  justify-content: flex-end; /* Align menu items to the end (right) */
+	  display: flex;
+	  width: auto; /* Or a specific width if you want to constrain the menu */
+	  list-style: none;
+	  padding-left: 0; /* Reset padding if needed */
+	  margin-left: 0; /* Reset margin if needed */
+	  position: relative;
+	}
+  
+	.nav li {
+	  padding: 0 10px; /* Spacing between menu items */
+	  font-size: 1.2rem; /* Font size for desktop */
+	}
+  
+	.nav a {
+	  text-decoration: none;
+	  color: #4C5270; /* Text color of the links */
+	}
+  
+	.nav a:hover,
+	.nav a:active {
+	  text-decoration: none;
+	  color: #FF758F; /* Hover and active link color */
+	}
+  }
+
+  /* Styles for large desktops */
+@media (min-width: 1200px) {
+
+.nav li {
+	  padding: 0 20px; /* Spacing between menu items */
+	  font-size: 2rem; /* Font size for desktop */
+	}
+  
+	.nav a {
+	  text-decoration: none;
+	  color: #4C5270; /* Text color of the links */
+	}
+  
+	.nav a:hover,
+	.nav a:active {
+	  text-decoration: none;
+	  color: #FF758F; /* Hover and active link color */
+	}
+  }
+  
