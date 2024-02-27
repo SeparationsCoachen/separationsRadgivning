@@ -24,12 +24,6 @@
     color: var(--text1-color)
 }
 
-.Coachen-text p{
-    font-size: 1rem;
-    color: var(--text1-color);
-    padding: 1rem 1rem 1rem 1rem;
-}
-
 .Coachen-text-body
 {
     font-size: 1rem;
@@ -39,6 +33,19 @@
 /* Styles for smaller tablets */
 @media (min-width: 768px) and (max-width: 819px) {}
 
+.Coachen-text h1{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem 1rem 0rem 1rem;
+    color: var(--text1-color)
+}
+
+.Coachen-text-body
+{
+    font-size: 2rem;
+    color: var(--text1-color);
+    padding: 1rem 1rem 1rem 1rem;
+}
 /* Styles for desktop */
 @media (min-width: 820px) {
     .SeparationsCoachen{
@@ -47,8 +54,20 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-bottom: 50px;
      }
+     .Coachen-text h1{
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 0rem 1rem 0rem 1rem;
+        color: var(--text1-color)
+    }
+    
+    .Coachen-text-body
+    {
+        font-size: 2rem;
+        color: var(--text1-color);
+        padding: 1rem 1rem 0rem 1rem;
+    }
 }
 
 /* Styles for large desktops */
