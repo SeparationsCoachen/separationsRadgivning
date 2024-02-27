@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import createClient from '../../client.js';
 import BlockContent from '@sanity/block-content-to-react';
-import '../../css/tappning.css';
+import '../../css/tjanster.css';
 
 const Text3Component = () => {
   const [TappningData, setTappningData] = useState(null);

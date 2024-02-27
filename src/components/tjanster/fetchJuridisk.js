@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import createClient from '../../client.js'; // Importera client
 import BlockContent from '@sanity/block-content-to-react';
-import '../../css/juridisk-text.css';
+import '../../css/tjanster.css';
 
 const Text2Component = () => {
   const [JuridiskHjalpData, setJuridiskHjalpData] = useState(null);
