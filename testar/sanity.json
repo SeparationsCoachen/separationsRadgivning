@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "project": {
+    "name": "separationscoachen"
+  },
+  "api": {
+    "projectId": "bb1yecey",
+    "dataset": "production"
+  }
+}
