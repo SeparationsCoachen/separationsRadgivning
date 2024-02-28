@@ -109,11 +109,6 @@
             font-size: 2rem;
         }
     }
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
 
 .tjanster h1{
    text-align: center;
