@@ -3,3 +3,109 @@
     color: var(--third-color);
     padding: 1rem;
 }
+
+.imageTwo{
+    width: 100%;
+}
+.juridisk-tappning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.juridiskText-main h1{
+    font-size:2rem;
+    padding-bottom: 1rem;
+
+}
+.juridiskText-main p{
+    font-size: 1rem;
+}
+.tappning-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tappning-text h1{
+    font-size:2rem;
+    padding-bottom: 1rem;
+
+}
+.tappning-text{
+    font-size: 1rem;
+}
+
+/* Styles for smaller tablets */
+@media (min-width: 768px) and (max-width: 819px) {
+    .juridiskText-main h1{
+        font-size:2.5rem;
+    
+    }
+    .juridiskText-main p{
+        font-size: 1.5rem;
+    }
+
+    .tappning-text h1{
+        font-size:2.5rem;
+    
+    }
+    .tappning-text p{
+        font-size: 1.5rem;
+    }
+    }
+    @media (min-width: 820px) {
+        .juridiskText-main h1{
+            font-size:2.5rem;
+        
+        }
+        .juridiskText-main p{
+            font-size: 1.5rem;
+        }
+    
+        .tappning-text h1{
+            font-size:2.5rem;
+        
+        }
+        .tappning-text p{
+            font-size: 1.5rem;
+        }
+    }
+    /* Styles for large desktops */
+    @media (min-width: 1024px) {
+        .juridisk-tappning{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }   
+        .juridiskText-main h1{
+            font-size:3rem;
+        
+        }
+        .juridiskText-main p{
+            font-size: 1.7rem;
+        }
+    
+        .tappning-text h1{
+            font-size:3rem;
+        
+        }
+        .tappning-text p{
+            font-size: 1.7rem;
+        }
+    }
+    
+    /* Styles for large desktops */
+    @media (min-width: 1200px) {
+        .Coachen-text h1{
+            font-size:3rem;
+        }
+        
+        .Coachen-text p{
+            font-size: 2rem;
+        }
+    }

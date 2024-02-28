@@ -2,7 +2,7 @@
 // Returnerar en bild
 import React, { useEffect, useState } from 'react';
 import createClient from '../../client.js';
-import '../../css/juridiskBild.css';
+import '../../css/tjanster.css';
 
 const ImageTwoComponent = () => {
     const [ImageOneData, setImageOneData] = useState(null);
@@ -32,7 +32,7 @@ const ImageTwoComponent = () => {
     }, []);
 
     return (
-        <div className="mainJuridiskBild">
+        <div className="imageTwo">
             {isLoading && <p>Loading...</p>}
             {isError && <p>Error fetching data</p>}
             {ImageOneData && (
@@ -41,7 +41,7 @@ const ImageTwoComponent = () => {
                         <div key={item._id}>
                             {/* Check if image is available before rendering */}
                             {item.image && item.image.asset && (
-                                <img src={item.image.asset.url} alt="Bild" className="juridisk-bild" />
+                                <img src={item.image.asset.url} alt="Bild" className="imageTwo" />
                             )}
                         </div>
                     ))}

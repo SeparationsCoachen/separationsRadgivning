@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
 }
 
 .Coachen-text{
@@ -18,10 +18,11 @@
 }
 
 .Coachen-text h1{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     padding: 1rem 1rem 0rem 1rem;
-    color: var(--text1-color)
+    color: var(--text1-color);
+
 }
 
 .Coachen-text p{
@@ -30,25 +31,19 @@
     padding: 1rem 1rem 1rem 1rem;
 }
 
-.Coachen-text-body
-{
-    font-size: 1rem;
-    color: var(--text1-color);
-    padding: 1rem 1rem 1rem 1rem;
-}
 /* Styles for smaller tablets */
-@media (min-width: 768px) and (max-width: 819px) {}
+@media (min-width: 768px) and (max-width: 819px) {
+.Coachen-text h1{
+    font-size:2.5rem;
+}
 
+.Coachen-text p{
+    font-size: 1.5rem;
+}
 /* Styles for desktop */
 @media (min-width: 820px) {
-    .SeparationsCoachen{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 50px;
-     }
+
+}
 }
 
 /* Styles for large desktops */
@@ -56,12 +51,25 @@
  .SeparationsCoachen{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 50px;
  }   
+ .Coachen-text h1{
+    font-size:2.5rem;
+}
+
+.Coachen-text p{
+    font-size: 1.8rem;
+}
 }
 
 /* Styles for large desktops */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .Coachen-text h1{
+        font-size:3rem;
+    }
+    
+    .Coachen-text p{
+        font-size: 2rem;
+    }
+}

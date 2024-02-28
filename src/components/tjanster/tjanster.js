@@ -1,13 +1,14 @@
+//här ska sen bild och text in
 import React from 'react';
+import '../../css/tjanster.css';
 import ImageTwoComponent from './imageTwo';
 import Text2Component from './fetchJuridisk';
-import SectionThree from '../Tappningsterapi/sectionThree';
-import '../../css/sectionTwo.css';
+import SectionThree from './fetchTappning';
 
-const SectionTwo = () => {
+const SectionFive = () => {
     return (
-        <div className="Juridiskhjalp">
-            <ImageTwoComponent className="ärduhär?" />
+        <div className="tjanster">
+            <ImageTwoComponent className="imageTwo" />
             <div className="juridisk-tappning">
             <Text2Component />
             <SectionThree />
@@ -16,4 +17,4 @@ const SectionTwo = () => {
     );
 }
 
-export default SectionTwo;
+export default SectionFive;
