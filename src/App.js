@@ -9,8 +9,6 @@ import { Header } from './components/header';
 import { Footer } from './components/footer';
 import './index.css';
 
-
-
 const ScrollToTop = () => {
   const location = useLocation();
 
@@ -31,6 +29,7 @@ function App() {
             <Route path="/" element={<Landningssida />} />
             <Route path="/separationsCoachen" element={<SectionOne />} />
             <Route path="/omMig" element={<SectionFour />} />
+            <Route path="/tjanster" element={<SectionFive />} /> 
             {/* Uncomment this line for a 404 page */}
             {/* <Route path="*" element={<NotFoundPage />} /> */}
           </Routes>

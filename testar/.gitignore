@@ -27,6 +27,3 @@
 
 # Dotenv and similar local-only files
 *.local
-
-# Ignore .env files
-.env
