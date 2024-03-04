@@ -1,0 +1,31 @@
+.btnService {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem; /* same as 1rem 1rem 1rem 1rem */
+    gap: 0.625rem; /* 10px */
+}
+
+.contactButton{
+    font-size: 1.125rem;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    width: 20vh;
+    border: none;
+    border-radius: 0.625rem; /* 10px */
+    padding: 0.4375rem 0rem 0.3125rem 0rem; /* 7px 0px 5px 0px */
+    margin-right: 0.625rem; /* 10px */
+    cursor: pointer;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+/* In the above, I combined the styles for .btnAbout, .contactButton, .MoreInfoBtn, and .projectsBtn since they share the same properties. */
+
+/* Conversion:
+   7px = 7/16 = 0.4375rem
+   5px = 5/16 = 0.3125rem
+   10px = 10/16 = 0.625rem
+*/
