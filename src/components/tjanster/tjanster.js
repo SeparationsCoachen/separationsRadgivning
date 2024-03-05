@@ -4,7 +4,7 @@ import '../../css/tjanster.css';
 import ImageTwoComponent from './imageTwo';
 import Text2Component from './fetchJuridisk';
 import SectionThree from './fetchTappning';
-
+import { BookingButton } from '../bookingButton'
 const SectionFive = () => {
     return (
         <div className="tjanster">
@@ -12,6 +12,8 @@ const SectionFive = () => {
             <div className="juridisk-tappning">
             <Text2Component />
             <SectionThree />
+            <BookingButton />
+
             </div>
         </div>
     );

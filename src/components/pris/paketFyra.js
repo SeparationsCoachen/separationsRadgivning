@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import createClient from '../../client.js'; // Import the client
 import BlockContent from '@sanity/block-content-to-react';
+import { BookingButton } from '../bookingButton.js'
 import '../../css/paket.css'
 
 const PaketFyra = () => {
@@ -44,6 +45,7 @@ const PaketFyra = () => {
               <h1>{item.title}</h1>
               <BlockContent blocks={item.body} />
               <p>{item.pris}</p>
+              <BookingButton />
             </div>
           ))}
         </div>

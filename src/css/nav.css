@@ -38,7 +38,7 @@ width: 30%;
 @media (max-width: 768px) {
 	.hamburger {
 	  display: flex; /* Show the hamburger */
-	  padding-right: 15px;
+	  padding-right: 46px;
 
 	} 
 	.hamburger svg {
@@ -49,8 +49,8 @@ width: 30%;
 	  visibility: hidden; /* Initially hidden */
 	  opacity: 0; /* Fully transparent */
 	  position: fixed; /* Use fixed to position relative to the viewport */
-	  top: 100px; /* Positioned at the top */
-	  left: 235px; /* Start from the left edge */
+	  top: 80px; /* Positioned at the top */
+	  left: 220px; /* Start from the left edge */
 	  right: 0; /* Stretch to the right edge, or remove if using a specific width */
 	  background: rgba(46, 89, 85, 0.8); /* Translucent background */
 	  z-index: 1000;
