@@ -54,7 +54,6 @@ export const ContactModal = () => {
       ref={modalRef}
       tabIndex="-1">
       <div className="modal-content">
-        <h1 id="modalTitle">Happier Soul</h1>
         <button
           type="button"
           className="close"

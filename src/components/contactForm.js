@@ -7,7 +7,7 @@ import '../css/modalForm.css';
 const ContactForm = () => {
   const [state, handleSubmit] = useForm('xqkrlzlq');
   if (state.succeeded) {
-    return <p className="message">Tack för ditt meddelande! Vi kommer att kontakta dig snart.</p>;
+    return <p className="message">Tack för ditt meddelande! Jag kommer att kontakta dig snart.</p>;
   }
 
   return (
@@ -31,20 +31,20 @@ const ContactForm = () => {
           <h2>Välj Paket:</h2>
           <label>
             <input type="checkbox" name="paket" value="paket1" />
-           Paket1
+          Rådgivning
           </label>
           <label>
             <input type="checkbox" name="paket" value="paket2" />
-           Paket2
+          Tappning
           </label>
           <label>
             <input type="checkbox" name="paket" value="paket3" />
-          Paket3
+          Gratis konsultation 30 min
           </label>
           <fieldset className="paketSektion">
             <label htmlFor="paket1">
               <input type="checkbox" name="paket" value="paket1" id="paket1" />
-            Webbinarie
+           Övrigt
             </label>
           </fieldset>
         </div>

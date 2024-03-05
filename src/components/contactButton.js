@@ -16,7 +16,7 @@ export const ContactButton = ({ style, children }) => {
       type="button" // Changed to 'button' type
       style={style}
       onClick={handleClick}
-      aria-label={children ? undefined : 'Kontakta Happier soul'}>
+      aria-label={children ? undefined : 'Kontakta SeparationsCoach'}>
       {children || 'Kontakta mig'}
     </button>
   );
