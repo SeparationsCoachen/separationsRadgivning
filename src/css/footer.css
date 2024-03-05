@@ -2,11 +2,85 @@
     display: flex;
 flex-direction: column;
     background-color: var(--secondary-color);
-    color: white;
     padding: 20px;
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: black;
 }
 
+.contactButtonFooter, .BookingButtonFooter{
+    border: none;
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    font-family: var(--font-family-p);
+    transition: background-color 0.3s, color 0.3s; /* Lägg till mjuk övergång för hover-effekten */
+    font-size: 0.75rem;
+}
+
+.contactButtonFooter:hover, .BookingButtonFooter:hover{
+    background-color: var(--section-color); /* Ändra till önskad bakgrundsfärg vid hover */
+    color: var(--third-color); /* Ändra till önskad textfärg vid hover */
+}
+
+.instagram p{
+    color: var(--third-color);
+    font-family: var(--font-family-p);
+    transition: color 0.3s; /* Lägg till mjuk övergång för hover-effekten */
+    font-size: 0.75rem;
+}
+
+.instagram:hover {
+    color: var(--section-color); /* Ändra till önskad färg vid hover */
+}
+
+
+
+/* Styles for smaller tablets */
+@media (min-width: 768px) {
+    
+.contactButtonFooter, .BookingButtonFooter{
+    font-size: 1.2rem;
+}
+
+
+.instagram p{
+
+    font-size: 1.2rem;
+}
+}
+
+/* Styles for desktop */
+@media (min-width: 820px) {
+    .contactButtonFooter, .BookingButtonFooter{
+        font-size: 1.5rem;
+    }
+    
+    
+    .instagram p{
+    
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:1024) {
+    .contactButtonFooter, .BookingButtonFooter{
+        font-size: 2rem;
+    }
+    
+    
+    .instagram p{
+    
+        font-size: 2rem;
+    }
+}
+
+/* Styles for large desktops */
+@media (min-width: 1200px) {  
+    .contactButtonFooter, .BookingButtonFooter{
+        font-size: 2rem;
+    }
+    
+    
+    .instagram p{
+    
+        font-size: 2rem;
+    }
+}

@@ -33,3 +33,89 @@
    5px = 5/16 = 0.3125rem
    10px = 10/16 = 0.625rem
 */
+
+
+/* Styles for smaller tablets */
+@media (min-width: 768px) and (max-width: 819px) {
+    .BookingButton{
+        font-size: 1.5rem;
+        background-color: var(--secondary-color);
+        color: var(--third-color);
+        width: 20vh;
+        border: none;
+        border-radius: 0.625rem; /* 10px */
+        padding: 0.5rem 0rem 0.5rem 0rem; /* 7px 0px 5px 0px */
+        margin-right: 0.625rem; /* 10px */
+        cursor: pointer;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .contactButton{
+        font-size: 1.5rem;
+        background-color: var(--secondary-color);
+        color: var(--third-color);
+        width: 20vh;
+        border: none;
+        border-radius: 0.625rem; /* 10px */
+        padding: 0.5rem 0rem 0.5rem 0rem; /* 7px 0px 5px 0px */
+        margin-right: 0.625rem; /* 10px */
+        cursor: pointer;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+}
+
+/* Styles for desktop */
+@media (min-width: 820px) {
+    .BookingButton{
+        font-size: 1.7rem;
+        padding: 0.7rem 0rem 0.7rem 0rem;
+    }
+    
+    .contactButton{
+        font-size: 1.7rem;
+        padding: 0.7rem 0rem 0.7rem 0rem;
+       
+    }
+}
+
+/* Styles for large desktops */
+@media (min-width: 1024px) {
+ .OmMig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }   
+ .OmmigText h1{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem 1rem 0rem 1rem;
+    color: var(--text1-color)
+}
+
+.OmmigText p{
+    font-size: 2rem;
+    color: var(--text1-color);
+    padding: 1rem 1rem 1rem 1rem;
+}
+}
+
+/* Styles for large desktops */
+@media (min-width: 1200px) {  
+     .OmmigText h1{
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 1rem 1rem 0rem 1rem;
+        color: var(--text1-color)
+    }
+    
+    .OmmigText p{
+        font-size: 2rem;
+        color: var(--text1-color);
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}

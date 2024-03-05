@@ -35,9 +35,10 @@ width: 30%;
   }
 
 /* Styles for mobile and tablet */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.hamburger {
 	  display: flex; /* Show the hamburger */
+	  
 	  padding-right: 46px;
 
 	} 
@@ -95,80 +96,127 @@ width: 30%;
 /* Styles for smaller tablets */
 @media (min-width: 768px) and (max-width: 819px) {
 	.hamburger {
-		display: flex;
-		justify-content: flex-end;
-		padding-right: 100px;
+		display: flex; /* Show the hamburger */
+		position: relative;
+		right: -50%;
+  
+	  } 
+	  .hamburger svg {
+		  width: 10%;
+			} 
+	  
+	  .nav {
+		visibility: hidden; /* Initially hidden */
+		opacity: 0; /* Fully transparent */
+		position: fixed; /* Use fixed to position relative to the viewport */
+		top: 80px; /* Positioned at the top */
+		left: 60%; /* Start from the left edge */
+		right: 0; /* Stretch to the right edge, or remove if using a specific width */
+		background: rgba(46, 89, 85, 0.8); /* Translucent background */
+		z-index: 1000;
+		flex-direction: column;
+		padding-bottom: 1rem;
+		transition: opacity 0.3s linear, visibility 0s linear 0.3s; /* Adjusted transition */
+		width: 30%; /* Take full width of the screen, adjust as needed */
+	  /* Take full height of the viewport */
+		overflow-y: auto; /* Allows scrolling if content is longer than the screen */
+		border-radius: 0.3rem;
+		text-align: center;
+	  }
 	
+	  .nav.open {
+	  visibility: visible; /* Shown */
+		opacity: 1; /* Fully visible */
+		transition: opacity 0.3s linear; /* Transition for a fade effect */
 	  }
-	.hamburger svg {
-		width: 22%;
-		  }
-	.nav {
-	  top: 125px; /* Positioned at the top */
-	  left: 460px; /* Start from the left edge */
-	  padding-top: 20px;
-	  padding-bottom: 20px;
-	  transition: opacity 0.3s linear, visibility 0s linear 0.3s; /* Adjusted transition */
-	  width: 40%; /* Take full width of the screen, adjust as needed */
-	/* Take full height of the viewport */
-	  overflow-y: auto; /* Allows scrolling if content is longer than the screen */
-	}
-  
-	.nav li {
-	  padding: 0.7rem 0; /* Adjust padding for list items on mobile */
-	}
-
-	.nav li {
-		font-size: 1.2rem; /* Tablet font size */
+	
+	  .nav ul {
+	  display:flex;
+		flex-direction: column; /* Stack menu items vertically on mobile */
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		margin: 0;
+		padding: 10px 0 0 0;
 	  }
-  
-	.nav a {
-	  text-decoration: none;
-	  color: #FEF6EB; /* Color of the links */
-	}
-	.nav a:hover,
-	.nav a.active {
-	  color: #4C5270; /* Color for active link */
-	}
+	
+	  .nav a {
+	
+		text-decoration: none;
+		color: #FEF6EB; /* Color of the links */
+		text-align: center;
+	  }
+	  .nav p{
+		font-size: 1.3rem;
+	  }
+	  .nav a:hover,
+	  .nav a.active {
+		color: #FEF6EB; /* Color for active link */
+	  }
 	
   }
   
   
   /* Styles for desktop */
   @media (min-width: 820px) {
-	  
 	.hamburger {
-		display: none; /* Hide the hamburger initially */
-	  }
+		display: flex; /* Show the hamburger */
+		position: relative;
+		right: -50%;
+  
+	  } 
+	  .hamburger svg {
+		  width: 10%;
+			} 
+	  
 	  .nav {
-		display: flex;
-		justify-content: center; /* Center items horizontally */
-		align-items: center; /* Center items vertically */
+		visibility: hidden; /* Initially hidden */
+		opacity: 0; /* Fully transparent */
+		position: fixed; /* Use fixed to position relative to the viewport */
+		top: 80px; /* Positioned at the top */
+		left: 60%; /* Start from the left edge */
+		right: 0; /* Stretch to the right edge, or remove if using a specific width */
+		background: rgba(46, 89, 85, 0.8); /* Translucent background */
+		z-index: 1000;
+		flex-direction: column;
+		padding-bottom: 1rem;
+		transition: opacity 0.3s linear, visibility 0s linear 0.3s; /* Adjusted transition */
+		width: 30%; /* Take full width of the screen, adjust as needed */
+	  /* Take full height of the viewport */
+		overflow-y: auto; /* Allows scrolling if content is longer than the screen */
+		border-radius: 0.3rem;
+		text-align: center;
 	  }
-	.nav ul {
-	  display: flex;
-	  justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-	  width: 100%;
-	  padding: 1rem;
-	}
-  
-	.nav li {
 	
-	  padding: 0 10px; /* Spacing between menu items */
-	  font-size: 1.2rem; /* Tablet font size */
-	}
-  
-	.nav a {
-	  text-decoration: none;
-	  color: #4C5270; /* Text color of the links */
-	}
-  
-	.nav a:hover,
-	.nav a:active {
-	  text-decoration: none;
-	  color: #FF758F; /* Hover and active link color */
-	}
+	  .nav.open {
+	  visibility: visible; /* Shown */
+		opacity: 1; /* Fully visible */
+		transition: opacity 0.3s linear; /* Transition for a fade effect */
+	  }
+	
+	  .nav ul {
+	  display:flex;
+		flex-direction: column; /* Stack menu items vertically on mobile */
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		margin: 0;
+		padding: 10px 0 0 0;
+	  }
+	
+	  .nav a {
+	
+		text-decoration: none;
+		color: #FEF6EB; /* Color of the links */
+		text-align: center;
+	  }
+	  .nav p{
+		font-size: 1.3rem;
+	  }
+	  .nav a:hover,
+	  .nav a.active {
+		color: #FEF6EB; /* Color for active link */
+	  }
   }
 
 /* Styles for large desktops */

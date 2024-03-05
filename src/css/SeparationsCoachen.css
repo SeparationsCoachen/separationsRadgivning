@@ -19,7 +19,7 @@
 }
 
 .Coachen-text h1{
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
     padding: 1rem 1rem 0rem 1rem;
     color: var(--text1-color);
@@ -27,7 +27,7 @@
 }
 
 .Coachen-text p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--text1-color);
     padding: 1rem 1rem 1rem 1rem;
 }
