@@ -41,12 +41,10 @@ const ContactForm = () => {
             <input type="checkbox" name="paket" value="paket3" />
           Gratis konsultation 30 min
           </label>
-          <fieldset className="paketSektion">
             <label htmlFor="paket1">
               <input type="checkbox" name="paket" value="paket1" id="paket1" />
            Övrigt
             </label>
-          </fieldset>
         </div>
         <div className="övrigtSektion">
           <h2>Övriga frågor eller kommentarer eller vilket seminarie du anmäler dig till</h2>

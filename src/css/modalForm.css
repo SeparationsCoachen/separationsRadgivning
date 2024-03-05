@@ -7,6 +7,7 @@
 	margin: 0 auto;
 	padding: 1rem;
 	background-color: #fff;
+	border: none;
   }
   .webbForm  h1{
 	color: var(--third-color);
@@ -37,6 +38,7 @@
 	display: block;
 	margin-bottom: 5px;
 	color: var(--text1-color);
+	border: none;
   }
   
   /* Align checkboxes with their labels */
