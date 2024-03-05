@@ -2,7 +2,7 @@
 // Returnerar en bild
 import React, { useEffect, useState } from 'react';
 import createClient from '../../client.js';
-import '../../css/separationscoachenBild.css';
+import '../../css/SeparationsCoachen.css';
 
 const ImageOne = () => {
     const [ImageOneData, setImageOneData] = useState(null);

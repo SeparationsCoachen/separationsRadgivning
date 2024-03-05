@@ -12,9 +12,12 @@ const SectionFive = () => {
             <div className="juridisk-tappning">
             <Text2Component />
             <SectionThree />
-            <BookingButton />
-
             </div>
+            <div className="booking-button">
+            <BookingButton />
+            </div>
+
+            
         </div>
     );
 }

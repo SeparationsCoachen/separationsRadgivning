@@ -83,39 +83,23 @@
 
 /* Styles for large desktops */
 @media (min-width: 1024px) {
- .OmMig{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
- }   
- .OmmigText h1{
-    font-size: 3rem;
-    font-weight: bold;
-    padding: 1rem 1rem 0rem 1rem;
-    color: var(--text1-color)
-}
-
-.OmmigText p{
-    font-size: 2rem;
-    color: var(--text1-color);
-    padding: 1rem 1rem 1rem 1rem;
-}
+    .BookingButton{
+        font-size: 1.7rem;
+        padding: 0.7rem 0rem 0.7rem 0rem;
+    }
+    
+    .contactButton{
+        font-size: 1.7rem;
+        padding: 0.7rem 0rem 0.7rem 0rem;
+       
+    }
 }
 
 /* Styles for large desktops */
-@media (min-width: 1200px) {  
-     .OmmigText h1{
-        font-size: 3rem;
-        font-weight: bold;
-        padding: 1rem 1rem 0rem 1rem;
-        color: var(--text1-color)
-    }
-    
-    .OmmigText p{
-        font-size: 2rem;
-        color: var(--text1-color);
-        padding: 1rem 1rem 1rem 1rem;
+@media (min-width: 1200px) {
+    .BookingButton{
+        font-size: 1.5rem;
+        width: 10vh;
     }
 }
+   

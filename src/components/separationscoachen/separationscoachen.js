@@ -9,7 +9,10 @@ const SectionOne = () => {
     <div className="SeparationsCoachen">
       <ImageOne/>
       <Text1Component />
-      <ContactButton />
+      <div>
+        <ContactButton />
+      </div>
+      
     </div>
   );
 };

@@ -76,12 +76,16 @@
     /* Styles for large desktops */
     @media (min-width: 1024px) {
         .juridisk-tappning{
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             align-items: center;
             justify-content: center;
-            padding: 1rem;
-        }   
+            padding: 2rem;
+        } 
+        .booking-button{
+            display: flex;
+            justify-content: center;
+        }  
         .juridiskText-main h1{
             font-size:3rem;
         

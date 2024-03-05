@@ -43,7 +43,9 @@ const PaketTre = () => {
               )}
               <h1>{item.title}</h1>
               <BlockContent blocks={item.body} />
+              <div className="paketbutton">
               <BookingButton />
+              </div>
             </div>
           ))}
         </div>

@@ -45,7 +45,9 @@ const PaketTva = () => {
                             <h1>{item.title}</h1>
               <BlockContent blocks={item.body} />
               <p>{item.pris}</p>
+              <div className="paketbutton">
               <BookingButton />
+              </div>
             </div>
           ))}
         </div>
