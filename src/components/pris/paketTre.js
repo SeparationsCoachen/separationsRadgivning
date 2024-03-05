@@ -3,24 +3,23 @@ import createClient from '../../client.js'; // Import the client
 import BlockContent from '@sanity/block-content-to-react';
 import '../../css/paket.css'
 
-const PaketTva = () => {
-  const [paketTvaData, setPaketTvaData] = useState(null);
+const PaketTre = () => {
+  const [paketTreData, setPaketTreData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
     createClient
       .fetch(
-        `*[_type == "paketTva"]{
+        `*[_type == "paketTre"]{
             _id,
             title,
             body,
-            pris,
-            "mainImageUrl": mainImage.asset->url // Add this line to fetch the main image URL
+            "mainImageUrl": mainImage.asset->url // Add this to fetch the main image URL
         }`
       )
       .then((data) => {
-        setPaketTvaData(data);
+        setPaketTreData(data);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -34,16 +33,15 @@ const PaketTva = () => {
     <div className="paketText">
       {isLoading && <p>Loading...</p>}
       {isError && <p>Error fetching data</p>}
-      {paketTvaData && (
+      {paketTreData && (
         <div>
-          {paketTvaData.map((item) => (
+          {paketTreData.map((item) => (
             <div key={item._id} className="paket-text">
               {item.mainImageUrl && (
-                <img src={item.mainImageUrl} alt={item.title} style={{width: '100%', height: 'auto'}} /> // Display the main image
+                <img src={item.mainImageUrl} alt={item.title} style={{width: '100%', height: 'auto'}} /> // Display the main image here
               )}
-                            <h1>{item.title}</h1>
+              <h1>{item.title}</h1>
               <BlockContent blocks={item.body} />
-              <p>{item.pris}</p>
             </div>
           ))}
         </div>
@@ -52,4 +50,4 @@ const PaketTva = () => {
   );
 }
 
-export default PaketTva;
+export default PaketTre;

@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { NavLink } from 'react-router-dom';
+import EttMeny from './fetchMeny/menyEtt';
+import TvaMeny from './fetchMeny/menyTva';
+import TreMeny from './fetchMeny/menyTre';
+import FyraMeny from './fetchMeny/menyFyra';
+import FemMeny from './fetchMeny/menyFem';
 import '../css/nav.css';
 
 export const Navigate = () => {
@@ -113,19 +118,19 @@ export const Navigate = () => {
         aria-hidden={!isOpen}>
         <ul>
           <li className="nav-coach">
-            <NavLink to="/" tabIndex={isOpen ? '0' : '-1'}>Separations Coachen</NavLink>
+            <NavLink to="/" tabIndex={isOpen ? '0' : '-1'}><EttMeny /></NavLink>
           </li>
           <li>
-            <NavLink to="/juridiskhjalp" tabIndex={isOpen ? '0' : '-1'}>Juridisk hjälp</NavLink>
+            <NavLink to="/tjanster" tabIndex={isOpen ? '0' : '-1'}><TvaMeny /></NavLink>
           </li>
           <li>
-            <NavLink to="/tappningsterapi" tabIndex={isOpen ? '0' : '-1'}>Tappningsterapi</NavLink>
+            <NavLink to="/Pris" tabIndex={isOpen ? '0' : '-1'}><TreMeny /></NavLink>
           </li>
           <li>
-            <NavLink to="/tjanster" tabIndex={isOpen ? '0' : '-1'}>Tjänster</NavLink>
+            <NavLink to="/OmMig" tabIndex={isOpen ? '0' : '-1'}><FyraMeny /></NavLink>
           </li>
           <li>
-            <NavLink to="/omMig" tabIndex={isOpen ? '0' : '-1'}>Om mig</NavLink>
+            <NavLink to="/" tabIndex={isOpen ? '0' : '-1'}><FemMeny /></NavLink>
           </li>
           {/* Fortsätt med fler NavLink-element här */}
         </ul>

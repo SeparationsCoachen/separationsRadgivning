@@ -3,15 +3,15 @@ import createClient from '../../client.js'; // Import the client
 import BlockContent from '@sanity/block-content-to-react';
 import '../../css/paket.css'
 
-const PaketTva = () => {
-  const [paketTvaData, setPaketTvaData] = useState(null);
+const PaketFyra = () => {
+  const [paketFyraData, setPaketFyraData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
     createClient
       .fetch(
-        `*[_type == "paketTva"]{
+        `*[_type == "paketFyra"]{
             _id,
             title,
             body,
@@ -20,7 +20,7 @@ const PaketTva = () => {
         }`
       )
       .then((data) => {
-        setPaketTvaData(data);
+        setPaketFyraData(data);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -34,14 +34,14 @@ const PaketTva = () => {
     <div className="paketText">
       {isLoading && <p>Loading...</p>}
       {isError && <p>Error fetching data</p>}
-      {paketTvaData && (
+      {paketFyraData && (
         <div>
-          {paketTvaData.map((item) => (
+          {paketFyraData.map((item) => (
             <div key={item._id} className="paket-text">
               {item.mainImageUrl && (
                 <img src={item.mainImageUrl} alt={item.title} style={{width: '100%', height: 'auto'}} /> // Display the main image
               )}
-                            <h1>{item.title}</h1>
+              <h1>{item.title}</h1>
               <BlockContent blocks={item.body} />
               <p>{item.pris}</p>
             </div>
@@ -52,4 +52,4 @@ const PaketTva = () => {
   );
 }
 
-export default PaketTva;
+export default PaketFyra;

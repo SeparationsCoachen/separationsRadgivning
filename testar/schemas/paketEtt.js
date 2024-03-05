@@ -5,11 +5,7 @@ export default defineType({
   title: 'Paket Ett',
   type: 'document',
   fields: [
-    defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    }),
+   
     defineField({
       name: 'mainImage',
       title: 'Main image',
@@ -19,14 +15,19 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
+      name: 'title',
+      title: 'Title',
+      type: 'string',
     }),
     defineField({
       name: 'body',
       title: 'Body',
       type: 'blockContent',
+    }),
+    defineField({
+      name: 'pris',
+      title: 'Pris',
+      type: 'string',
     }),
   ],
 

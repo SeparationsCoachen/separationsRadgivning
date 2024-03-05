@@ -4,7 +4,8 @@ import { useEffect } from 'react';
 import Landningssida from './pages/landningssida';
 import SectionOne from './components/separationscoachen/separationscoachen';
 import SectionFour from './components/Ommig/SectionFour';
-import SectionFive from './components/tjanster/tjanster'; 
+import SectionFive from './components/tjanster/tjanster';
+import SectionPris from './components/pris/Paket'
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { ModalProvider } from './components/modalContext';
@@ -33,6 +34,7 @@ function App() {
             <Route path="/separationsCoachen" element={<SectionOne />} />
             <Route path="/omMig" element={<SectionFour />} />
             <Route path="/tjanster" element={<SectionFive />} /> 
+            <Route path="/Pris" element={<SectionPris />} />
             {/* Uncomment this line for a 404 page */}
             {/* <Route path="*" element={<NotFoundPage />} /> */}
           </Routes>

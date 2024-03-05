@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import createClient from '../../client.js'; // Importera client
+import createClient from '../../client.js'; // Import the client
 import BlockContent from '@sanity/block-content-to-react';
+import '../../css/paket.css'
 
 const PaketEtt = () => {
-  const [paketEttData, setpaketEttData] = useState(null);
+  const [paketEttData, setPaketEttData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
@@ -14,10 +15,12 @@ const PaketEtt = () => {
             _id,
             title,
             body,
+            pris,
+            "mainImageUrl": mainImage.asset->url // This line fetches the main image URL
         }`
       )
       .then((data) => {
-        setpaketEttData(data);
+        setPaketEttData(data);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -28,23 +31,21 @@ const PaketEtt = () => {
   }, []);
 
   return (
-    <div className="OmmigText">
+    <div className="paketText">
       {isLoading && <p>Loading...</p>}
       {isError && <p>Error fetching data</p>}
       {paketEttData && (
         <div>
           {paketEttData.map((item) => (
-            <div key={item._id}>
+            <div key={item._id} className="paket-text">
+              {item.mainImageUrl && (
+                <img src={item.mainImageUrl} alt={item.title} style={{width: '100%', height: 'auto'}} /> // This line displays the main image
+              )}
               <h1>{item.title}</h1>
-              <BlockContent
-          blocks={item.body}
- 
-        />
+              <BlockContent blocks={item.body} />
+              <p>{item.pris}</p>
             </div>
           ))}
-          <div>
-         
-      </div>
         </div>
       )}
     </div>

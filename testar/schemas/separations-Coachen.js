@@ -3,7 +3,7 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'separation',
-  title: 'separation',
+  title: 'Separationcoachen start',
   type: 'document',
   fields: [
     defineField({

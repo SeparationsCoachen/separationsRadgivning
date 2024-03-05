@@ -40,10 +40,11 @@ width: 30%;
 	  display: flex; /* Show the hamburger */
 	  padding-right: 15px;
 
-	}  
+	} 
 	.hamburger svg {
-		width: 20%;
-		  }
+		width: 10%;
+		  } 
+	
 	.nav {
 	  visibility: hidden; /* Initially hidden */
 	  opacity: 0; /* Fully transparent */

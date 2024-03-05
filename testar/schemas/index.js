@@ -9,6 +9,12 @@ import Tappning from './tappning'
 import paketEtt from './paketEtt'
 import paketTva from './paketTva'
 import paketTre from './paketTre'
+import PaketFyra from './paketFyra'
+import menyEtt from './navEtt'
+import menyTva from './menyTva'
+import menyTre from './menyTre'
+import menyFyra from './menyFyra'
+import menyFem from './menyFem'
 
 
-export const schemaTypes = [Tappning, Ommig, separation, pictureOfMe, juridiskBild, blockContent, SeparationCoachenBild, JuridiskHjalp, paketEtt, paketTva, paketTre]
+export const schemaTypes = [separation,SeparationCoachenBild, juridiskBild,JuridiskHjalp,Tappning,paketEtt, paketTva, paketTre, PaketFyra, Ommig, pictureOfMe,  blockContent,  menyEtt, menyTva, menyTre, menyFyra, menyFem]
