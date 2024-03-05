@@ -5,7 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import '../css/modalForm.css';
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm('xxxxx');
+  const [state, handleSubmit] = useForm('xqkrlzlq');
   if (state.succeeded) {
     return <p className="message">Tack för ditt meddelande! Vi kommer att kontakta dig snart.</p>;
   }
