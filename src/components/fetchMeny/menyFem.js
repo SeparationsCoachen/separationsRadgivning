@@ -25,10 +25,10 @@ const FemMeny = () => {
       });
   }, []);
 
-  if (!menyFemData) return <div>Loading...</div>;
+  if (!menyFemData) return <div><p aria-busy="true">Loading...</p></div>;
 
   return (
-    <div className="menytre-main">
+    <div className="menytre-main" aria-labelledby="menyTreTitle">
      {isLoading && <p>Loading...</p>}
      {isError && <p>Error fetching data</p>}
      {menyFemData && menyFemData.map((item) => (

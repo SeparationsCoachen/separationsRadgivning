@@ -25,10 +25,10 @@ const TreMeny = () => {
       });
   }, []);
 
-  if (!menyTreData) return <div>Loading...</div>;
+  if (!menyTreData) return <div><p aria-busy="true">Loading...</p></div>;
 
   return (
-    <div className="menytre-main">
+    <div className="menytre-main" aria-labelledby="menyTreTitle">
      {isLoading && <p>Loading...</p>}
      {isError && <p>Error fetching data</p>}
      {menyTreData && menyTreData.map((item) => (

@@ -1,9 +1,6 @@
-// Fetch bilden från API:et
-// Returnerar en bild
 import React, { useEffect, useState } from 'react';
 import createClient from '../../client.js';
 import '../../css/ommigBild.css';
-
 
 const ImageThreeComponent = () => {
     const [ImageOneData, setImageOneData] = useState(null);
@@ -14,6 +11,7 @@ const ImageThreeComponent = () => {
         createClient
             .fetch(
                 `*[_type == "pictureOfMe"]{
+                    _id,
                     image {
                         asset-> {
                             url
@@ -33,16 +31,16 @@ const ImageThreeComponent = () => {
     }, []);
 
     return (
-        <div className="MainOm-Mig">
+        <div className="MainOm-Mig" aria-busy={isLoading} aria-live="polite">
             {isLoading && <p>Loading...</p>}
-            {isError && <p>Error fetching data</p>}
+            {isError && <p role="alert">Error fetching data</p>}
             {ImageOneData && (
                 <div>
                     {ImageOneData.map((item) => (
                         <div key={item._id}>
                             {/* Check if image is available before rendering */}
                             {item.image && item.image.asset && (
-                                <img src={item.image.asset.url} alt="Bild" className="OmMig-Bild" />
+                                <img src={item.image.asset.url} alt="A personal portrait of me" className="OmMig-Bild" />
                             )}
                         </div>
                     ))}

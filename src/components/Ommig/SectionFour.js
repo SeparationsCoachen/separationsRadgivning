@@ -5,11 +5,11 @@ import Text4Component from './fetchOmMig';
 
 const SectionFour = () => {
     return (
-        <div className="OmMig">
+        <main className="OmMig">
             <ImageThreeComponent />
             <Text4Component />
            
-        </div>
+        </main>
     );
 }
 

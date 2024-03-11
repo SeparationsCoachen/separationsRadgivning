@@ -25,10 +25,10 @@ const FyraMeny = () => {
       });
   }, []);
 
-  if (!menyFyraData) return <div>Loading...</div>;
+  if (!menyFyraData) return <div><p aria-busy="true">Loading...</p>.</div>;
 
   return (
-    <div className="menyfyra-main">
+    <div className="menyfyra-main" aria-labelledby="menyFyraTitle">
      {isLoading && <p>Loading...</p>}
      {isError && <p>Error fetching data</p>}
      {menyFyraData && menyFyraData.map((item) => (

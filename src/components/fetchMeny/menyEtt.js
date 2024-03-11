@@ -25,10 +25,10 @@ const EttMeny = () => {
       });
   }, []);
 
-  if (!menyEttData) return <div>Loading...</div>;
+  if (!menyEttData) return <div><p aria-busy="true">Loading...</p></div>;
 
   return (
-    <div className="menyEtt-main">
+    <main className="menyEtt-main" aria-labelledby="menyEttTitle">
      {isLoading && <p>Loading...</p>}
      {isError && <p>Error fetching data</p>}
      {menyEttData && menyEttData.map((item) => (
@@ -36,7 +36,7 @@ const EttMeny = () => {
           <p>{item.title}</p>
         </div>
       ))}
-    </div>
+    </main>
   );
 }
 

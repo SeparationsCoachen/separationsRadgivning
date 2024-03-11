@@ -29,23 +29,17 @@ const Text4Component = () => {
   }, []);
 
   return (
-    <div className="OmmigText">
+    <div className="OmmigText" aria-busy={isLoading}>
       {isLoading && <p>Loading...</p>}
-      {isError && <p>Error fetching data</p>}
+      {isError && <p role="alert">Error fetching data</p>}
       {OmmigData && (
         <div>
           {OmmigData.map((item) => (
-            <div key={item._id}>
+            <section key={item._id}>
               <h1>{item.title}</h1>
-              <BlockContent
-          blocks={item.body}
- 
-        />
-            </div>
+              <BlockContent blocks={item.body} />
+            </section>
           ))}
-          <div>
-         
-      </div>
         </div>
       )}
     </div>

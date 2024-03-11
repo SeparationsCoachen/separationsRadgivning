@@ -25,10 +25,10 @@ const TvaMeny = () => {
       });
   }, []);
 
-  if (!menyTvaData) return <div>Loading...</div>;
+  if (!menyTvaData) return <div><p aria-busy="true">Loading...</p></div>;
 
   return (
-    <div className="menyTva-main">
+    <div className="menyTva-main" aria-labelledby="menyTvåTitle">
      {isLoading && <p>Loading...</p>}
      {isError && <p>Error fetching data</p>}
      {menyTvaData && menyTvaData.map((item) => (

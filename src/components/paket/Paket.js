@@ -8,13 +8,13 @@ import '../../css/paket.css'
 
 const SectionPris = () => {
     return (
-        <div className="paket-main">
+        <main className="paket-main">
             <PaketEtt />
             <PaketTva />
             <PaketFyra />
             <PaketTre />
            
-        </div>
+        </main>
     );
 }
 
