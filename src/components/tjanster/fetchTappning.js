@@ -33,7 +33,7 @@ const Text3Component = () => {
       {isLoading && <p>Loading...</p>}
       {isError && <p>Error fetching data</p>}
       {TappningData && TappningData.map((item) => (
-        <div key={item._id}>
+        <div key={item._id} classname="tappningH1">
           <h1>{item.title}</h1>
           <BlockContent
             blocks={item.body} // Nu inuti .map(), så 'item' är definierad

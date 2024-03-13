@@ -15,6 +15,7 @@ import menyTva from './menyTva'
 import menyTre from './menyTre'
 import menyFyra from './menyFyra'
 import menyFem from './menyFem'
+import logoBild from './loggaimg'
 
 
-export const schemaTypes = [separation,SeparationCoachenBild, juridiskBild,JuridiskHjalp,Tappning,paketEtt, paketTva, paketTre, PaketFyra, Ommig, pictureOfMe,  blockContent,  menyEtt, menyTva, menyTre, menyFyra, menyFem]
+export const schemaTypes = [logoBild,separation,SeparationCoachenBild, juridiskBild,JuridiskHjalp,Tappning,paketEtt, paketTva, paketTre, PaketFyra, Ommig, pictureOfMe,  blockContent,  menyEtt, menyTva, menyTre, menyFyra, menyFem]

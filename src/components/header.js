@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navigate } from './nav';
+import Logo from './logga'
 import '../css/header.css';
 
 export const Header = () => {
@@ -7,7 +8,7 @@ export const Header = () => {
     <header className="mainHeader">
       <div className="header">
         <div className="logo">
-          hej
+          <Logo />
         </div>
         <nav className="Navigate" aria-label="Main navigation">
           <Navigate />
