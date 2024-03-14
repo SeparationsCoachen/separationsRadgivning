@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import createClient from '../../client.js'; // Antag att detta är korrekt konfigurerad klient
-
+import '../../css/nav.css'
 const FyraMeny = () => {
   const [menyFyraData, setmenyFyraData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -32,7 +32,7 @@ const FyraMeny = () => {
      {isLoading && <p>Loading...</p>}
      {isError && <p>Error fetching data</p>}
      {menyFyraData && menyFyraData.map((item) => (
-        <div key={item._id} className="menyfyra">
+        <div key={item._id} className="meny">
           <p>{item.title}</p>
         </div>
       ))}

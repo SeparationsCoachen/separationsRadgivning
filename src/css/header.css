@@ -13,7 +13,7 @@
 }
 
 .logoBild-bild{
-	width: 60%;
+	width: 40%;
 	height: auto;
 	border-radius: 50%;
 
@@ -34,11 +34,26 @@
 }
 @media (min-width: 820px){
 	.logo img{
-		width: 100%;
+		width: 40%;
 	
 	}
 	.Navigate{
 		margin-top: 1rem;
+	
+	}
+}
+@media (min-width: 1024px) {
+	.mainHeader{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		background-color: #ED7464;
+	
+	
+	}
+	.logo img{
+		width: 50%;
 	
 	}
 }

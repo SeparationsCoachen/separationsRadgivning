@@ -38,7 +38,7 @@ const PaketFyra = () => {
       {paketFyraData && (
         <div>
           {paketFyraData.map((item) => (
-            <article key={item._id} className="paket-text">
+            <div key={item._id} className="paket-text">
               {item.mainImageUrl && (
                 <img src={item.mainImageUrl} alt={`Huvudbild för paketet ${item.title}`} style={{width: '100%', height: 'auto'}} />
               )}
@@ -48,7 +48,7 @@ const PaketFyra = () => {
               <div className="paketbutton">
                 <BookingButton />
               </div>
-            </article>
+            </div>
           ))}
         </div>
       )}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import createClient from '../../client.js'; // Antag att detta är korrekt konfigurerad klient
-
+import '../../css/nav.css'
 const TreMeny = () => {
   const [menyTreData, setmenyTreData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -32,7 +32,7 @@ const TreMeny = () => {
      {isLoading && <p>Loading...</p>}
      {isError && <p>Error fetching data</p>}
      {menyTreData && menyTreData.map((item) => (
-        <div key={item._id} className="menytre">
+        <div key={item._id} className="meny">
           <p>{item.title}</p>
         </div>
       ))}
