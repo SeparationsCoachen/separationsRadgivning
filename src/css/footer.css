@@ -3,6 +3,7 @@
 flex-direction: column;
     background-color: var(--secondary-color);
     padding: 20px;
+    text-align: center;
 }
 
 .contactButtonFooter, .BookingButtonFooter{

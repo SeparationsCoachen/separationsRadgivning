@@ -31,15 +31,15 @@ const ContactForm = () => {
           <h2>Välj Paket:</h2>
           <label>
             <input type="checkbox" name="paket" value="paket1" />
-          Rådgivning
+           Rådgivning
           </label>
           <label>
             <input type="checkbox" name="paket" value="paket2" />
-          Tappning
+           Tappning
           </label>
           <label>
             <input type="checkbox" name="paket" value="paket3" />
-          Gratis konsultation 30 min
+           Gratis konsultation 20 min
           </label>
             <label htmlFor="paket1">
               <input type="checkbox" name="paket" value="paket1" id="paket1" />
