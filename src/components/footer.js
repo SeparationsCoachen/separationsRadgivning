@@ -27,7 +27,7 @@ export const Footer = () => {
 
       <div className="social">
         {/* Länk till Instagram */}
-        <a href="https://www.instagram.com/ellatech.se" target="_blank" rel="noopener noreferrer" aria-label="Follow me on Instagram">
+        <a href="https://www.instagram.com/separationscoachen/" target="_blank" rel="noopener noreferrer" aria-label="Follow me on Instagram">
           <i className="instagram"> <p>Separationscoach </p></i>
         </a>
       </div>
