@@ -1,3 +1,25 @@
-.OmMig-Bild{
-    width: 100%;
+.OmMig-Bild {
+    padding-top: 5rem;
+    width: 50%; /* Anpassa bredden efter behov */
+    height: auto; /* Så att höjden anpassas proportionellt */
+    display: block; /* För att ta bort eventuella mellanrum runt bilden */
+    margin: auto; /* Centrerar bilden vertikalt och horisontellt */
 }
+
+
+
+/* Styles for large desktops */
+@media (min-width: 1024px) {
+    .OmMig-Bild{
+        width: 50%;
+        height: auto;
+    }
+   }
+   
+   /* Styles for large desktops */
+   @media (min-width: 1200px) {  
+    .OmMig-Bild{
+        width: 50%;
+        height: auto;
+    }
+   }

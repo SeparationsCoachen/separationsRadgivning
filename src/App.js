@@ -28,7 +28,7 @@ function App() {
         <ScrollToTop />
         <ModalProvider>
         <Header role="banner" />
-        <div role="main">
+        <div role="main" className='main'>
           <Routes>
             <Route path="/" element={<Landningssida />} />
             <Route path="/separationsCoachen" element={<SectionOne />} />

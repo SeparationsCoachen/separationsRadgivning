@@ -79,6 +79,9 @@ i {
   font-style: normal;
 }
 
+.main{
+  padding: 3rem;
+}
 
 @media screen and (min-width: 820px) {
   h1 {
